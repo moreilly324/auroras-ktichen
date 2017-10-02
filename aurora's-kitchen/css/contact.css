@@ -1,0 +1,276 @@
+/*
+Project Name: Aurora's Simple Recipes
+Client: Me
+Author: Matthew O'Reilly
+Developer @GA in NYC
+*/
+
+
+/******************************************
+/* SETUP
+/*******************************************/
+
+* {
+  -moz-box-sizing: border-box; /* Firexfox */
+  -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+  box-sizing: border-box; /* IE */
+}
+
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+.clear {
+  clear: both;
+}
+
+.alignright {
+  float: right;
+  padding: 0 0 10px 10px; /* note the padding around a right floated image */
+}
+
+.alignleft {
+  float: left;
+  padding: 0 10px 10px 0; /* note the padding around a left floated image */
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+  color: #043049;
+  font-size: 26px;
+  line-height: 1.4;
+  color: #606161;
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  background: white	;
+  width: 100%;
+}
+a {
+  text-decoration: none;
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+/* Center the container */
+.container {
+  width: 100%;
+  margin: 0 auto;
+  background: white;
+}
+
+#sub-form{
+  text-align: center;
+  background: #676;
+  border-bottom: 3px solid white;
+  padding-bottom: 6px;
+  padding-top: 4px;
+}
+
+form label{
+  color: white;
+  text-align: bottom;
+  line-height: 1;
+  font-weight: 800;
+  padding-right: 22px;
+  margin: 0;
+  box-sizing: normal;
+  width: 60%;
+  height: 50px;
+}
+
+#sub-list{
+  width: 25%;
+  font-style: italic;
+  font-weight: lighter;
+  color: gray;
+}
+
+#subscribe{
+  background: maroon;
+  color: white;
+  height: 30px;
+  width: 15%;
+  font-weight: 800;
+  font-size: .5em;
+}
+
+#subscribe:hover{
+  background:white;
+  color:red;
+  cursor: pointer;
+}
+header{
+	width: 90%;
+	margin:	0 auto;
+	text-align: center;
+	font-family: 'Handlee', cursive;
+	margin-top: 2.5%;	
+}
+
+header>.wrap{
+	width: auto;
+	min-width: 0;
+	max-width: none;
+	padding-left: 20%;
+}
+#inside{
+	text-align: center;
+}
+
+#first{
+	float: left;
+	width: 30%;
+	display: block;
+	margin-top: 4.5%;
+}
+
+#logo{
+	float: left;
+	display: block;
+	text-align: center;
+	width: 15%;
+}
+
+#second{
+	float: left;
+	width: 30%;
+	display: block;
+	margin-top: 4.5%;
+}
+
+nav ul{
+	list-style: none;
+}
+
+nav ul li{
+	display: inline-block;
+	text-transform: uppercase;
+	font-size: .65em;
+	padding: 2% 7%;
+}
+
+nav ul li:first-child{
+	padding-right: 10%;
+}
+
+nav a{
+	color: #676;
+}
+
+
+nav a:hover,
+nav a:active{
+  font-size: 1.2em;
+  text-decoration: underline;
+}
+
+nav ul li ul{
+  position: absolute;
+  font-size: 1em;
+  padding: 5px;
+  background: white;
+}
+
+nav ul li ul li{
+  display: block;
+  position: relative;
+  color: #676;
+  padding: 5px;
+}
+
+ul .dropmenu{
+  display: none;
+}
+
+ul .dropmenu:hover{
+  display: inline-block;
+}
+
+#slogan{
+	text-align: center;
+	color: #676;
+	font-family: 'Cormorant Garamond', serif;
+	font-style: 300i;
+	font-size: .75em;
+}
+
+.first-third{
+	width: 31%;
+	position: relative;
+	float: left;
+}
+
+.firsdt-third .inside-pic{
+	top: 80%;
+}
+
+.one-third{
+	position: relative;
+	float: left;
+	padding-left: 2%;
+	width: 31%;
+}
+
+footer{
+	height: 200px;
+	color: white;
+	background: linear-gradient(0deg, rgba(2,173,231,0.5), rgba(2,173,231,0.5)), url(../images/footer.jpg) repeat;
+	background-position: 50% 70%;
+	width: 100%;
+	text-align: center;
+	padding: 2%;
+}
+
+footer ul{
+	list-style: none;
+}
+footer ul li{
+	padding: 1%;
+}
+footer ul li:first-child{
+	padding: 0;
+}
+
+#form-container{
+  background: white;
+  text-align: center;
+  padding-bottom: 5%;
+}
+
+#settings-form fieldset legend{
+  color: #676;
+  text-decoration: underline;
+  font-family: 'Handlee', cursive;
+  font-weight: 600;
+  padding-bottom: 2%;
+  padding-top: 1%;
+  font-size: 1.2em;
+}
+
+#settings-form label{
+  color: #676;
+  font-family: 'Handlee', cursive;
+  font-weight: 300;
+  padding-bottom: 1.2%;
+  font-size: .8em;
+}
+
+#reason{
+  padding: 3%;
+  text-align: center;
+}
+
+.gender{
+  text-decoration: underline;
+}
