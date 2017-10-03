@@ -73,7 +73,7 @@ $(document).ready(function()	{
 }
 
 	function change(event){
-		$(".holder").append("src", images[i]);
+		$(".holder").attr("src", images[i]);
 		$("#head").html(title[i]);
 		$("#descriptor").html(description[i]);
 		$("#link").attr("a", link[i]);
