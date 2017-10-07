@@ -19,7 +19,7 @@
 	</head>
 	<body>
 		<form id="sub-form">
-			<label for="sub-list" for="subscribe">Need ideas for dinner? Subscribe today! </label>
+			<label for="sub-list">Need ideas for dinner? Subscribe today! </label>
 			<input id="sub-list" type="email" name="sub-list" value="Your e-mail address" />
 			<input id="subscribe" type="submit" name="subscribe" value="SUBSCRIBE" />
 		</form>
@@ -32,16 +32,15 @@
 							<li><a href="contact.html">Contact</a></li>
 						</ul>
 					</nav>
-					<p id="logo"><a href="index.html"><img src="images/Aurora'sKitchen.jpg" height="90%" width="95%"></a></p>
+					<p id="logo"><a href="index.html"><img src="images/Aurora'sKitchen.jpg" height="90%" width="95%" alt="Aurora's Kitchen"></a></p>
 					<nav id="second">
 						<ul>
 							<li class="hover"><a href="recipes.html">Recipes</a>
 								<ul class="dropmenu">
 									<li><a href="chicken.html">Chicken</a></li>
-									<li><a href="beef.html">Beef</a></li>
-									<li><a href="pork.html">Pork</a></li>
+									<li><a href="beef.html">Beef&amp;Pork</a></li>
 									<li><a href="sides.html">Sides</a></li>
-									<li><a href="pasta.html">Pasta/Sauces</a></li>
+									<li><a href="pasta/sauces.html">Pasta/Sauces</a></li>
 									<li><a href="fish.html">Fish</a></li>
 									<li><a href="soups.html">Soups</a></li>
 									<li><a href="specials.htmk">Specials</a></li>
@@ -56,16 +55,18 @@
 			<p></p>
 		</div>
 		<p id="border">________________________________________________________________________________________________________________________________________</p>
-		<h1 id="dishes">Dishes of the Week</h1>
 		<section id="main">
 			<div class="container">
-				<section id="posts">
+				<section id="posts">	
+				<h1 id="dishes">Dishes of the Week</h1>
 					<div class="image">
-						<img class="holder" src="images/Chicken-Marsala.jpg" height="450" width="100%" alt="Chicken Marsala" />
+						<img id="contain" src="images/Chicken-Marsala.jpg" height="450" width="100%" alt="Chicken Marsala" />
 						<div>
 							<span class="inside-pic">
-							<h2 id="head"><a href="chickenmarsala.html">Chicken Marsala</a></h2>
-							<p id="descriptor">Aurora's Chicken Marsala is easy to enjoy and even easier to prepare. Follow these simple steps to cook a delicious meal</p>
+							<a href="chickenmarsala.html" id="head">Chicken Marsala</a>
+							<br>
+							<strong id="descriptor">Aurora's Chicken Marsala is easy to enjoy and even easier to prepare. Follow these simple steps to cook a delicious meal</strong>
+							<br>
 							<a id="link" href="chickenmarsala.html">Learn more</a>
 							</span>
 						</div>
@@ -76,13 +77,13 @@
 							</form>
 						</div>	
 					</div>
-				<h1 id="quick"><a href="quick.html">Quick Dishes</a></h1>
 				<section>
+					<h2 id="quick"><a href="quick.html">Quick Dishes</a></h2>
 					<div class="first-third">
 					<div class="image">
 						<img class="holder" src="images/teriyaki.jpg" height="205" width="100%" alt="Chicken Teriyaki" />
 						<span class="inside-pic">
-							<h2><a href="teriyaki.html">Chicken Teriyaki</a></h2>
+							<a href="teriyaki.html">Chicken Teriyaki</a>
 							<br>	
 						</span>
 					</div>
@@ -91,7 +92,7 @@
 					<div class="image">
 						<img class="holder" src="images/Chicken T&A.jpg" height="205" width="100%" alt="Chicken Tomatoes and Artichokes" />
 						<span class="inside-pic">
-							<h2><a href="chickent+a.html">Chicken T&amp;A</a></h2>
+							<a href="chickent+a.html">Chicken T&amp;A</a>
 							<br>	
 						</span>
 					</div>
@@ -100,19 +101,19 @@
 					<div class="image">
 						<img class="holder" src="images/meatloaf.jpg" height="205" width="100%" alt="Meatloaf" />
 						<span class="inside-pic">
-							<h2><a href="meatloaf.html">Meatloaf</a></h2>
+							<a href="meatloaf.html">Meatloaf</a>
 							<br>	
 						</span>
 					</div>
 					</div>
 				</section>
-					<h1 id="sides"><a href="sides.html">Sides</a></h1>
 				<section>
+					<h2 id="sides"><a href="sides.html">Sides</a></h2>
 					<div class="first-third">
 					<div class="image">
 						<img class="holder" src="images/asparagus.jpg" height="205" width="100%" alt="Breaded Asparagus" />
 						<span class="inside-pic">
-							<h2><a href="asparagus.html">Breaded Asparagus</a></h2>
+							<a href="asparagus.html">Breaded Asparagus</a>
 							<br>	
 						</span>
 					</div>
@@ -121,7 +122,7 @@
 					<div class="image">
 						<img class="holder" src="images/verze.jpg" height="205" width="100%" alt="Verze" />
 						<span class="inside-pic">
-							<h2><a href="verse.html">Verze</a></h2>
+							<a href="verse.html">Verze</a>
 							<br>	
 						</span>
 					</div>
@@ -130,7 +131,7 @@
 					<div class="image">
 						<img class="holder" src="images/itacous.jpg" height="205" width="100%" alt="Cous Cous with Tomato Broccoli" />
 						<span class="inside-pic">
-							<h2><a href="itcous.html">Italian CousCous</a></h2>
+							<a href="itcous.html">Italian CousCous</a>
 							<br>	
 						</span>
 					</div>
@@ -140,15 +141,15 @@
 			</div>
 			<div class="container">
 				<aside id="side">
-					<h1><a href="about.html">About</a></h1>
+					<h2><a href="about.html">About</a></h2>
 					<img src="images/Auroa'sKitchenAbout.jpg" height="90%" width="90%">
 					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur non arcu lobortis, fringilla ex at, dictum sem.</p>
 					<button class="clicktoarticle"><a href="about.html">Read More</a></button>
 					<h1>
 					<a href="simplecooking.html"><img src="images/aurorawhy.jpg" height="350" width="120%" alt="Aurora's Simple Recipes" /></a>
-					<form id="search">
+					<form id="search-form">
 						<label for="search">Search for dishes below:</label>
-						<input type="text" name="search" placeholder="Search..."/>
+						<input type="text" id="search" value="Search..."/>
 					</form>
 					<p></p>
 					<a href="oliveoil.html"><img src="images/olivearticle.png" height="250" width="120%" alt="10 Ways to use Olive Oil" /></a>

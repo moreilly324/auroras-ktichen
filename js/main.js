@@ -22,6 +22,19 @@ $(document).ready(function()	{
 				$('#sub-list').val('Your e-mail address');
 		}
 
+	$('#search').click(clear);
+			function clear() {
+				$('#search').val('');
+		}
+
+		$('#search').focusout(fill);
+
+	    function fill() {
+	    	var search = $('#search').val();
+	    	if (search == "")
+				$('#search').val('Search...');
+		}
+
 	$('#subscribe').click(emaillist);
 
 		function emaillist(event){
@@ -51,12 +64,15 @@ $(document).ready(function()	{
 	];
 
 	var link=[
-	'<a href="chickenmarsala.html">Learn More</a>',
-	'<a href="alfredo.html">Learn More</a>',
-	'<a href="scampi.html">Learn More</a>'
+	'chickenmarsala.html',
+	'alfredo.html',
+	'scampi.html'
 	];
 
 	var i=0;
+
+	$("#button-holder .bttn[value='Next>']").on("click", nextimage);
+	$("#button-holder .bttn[value='<Back']").on("click", previousimage);
 
 	function nextimage(){
 	if (i+1<images.length){
@@ -72,15 +88,12 @@ $(document).ready(function()	{
 		}
 }
 
-	function change(event){
-		$(".holder").attr("src", images[i]);
+	function change(){
+		$("#contain").attr("src", images[i]);
 		$("#head").html(title[i]);
 		$("#descriptor").html(description[i]);
-		$("#link").attr("a", link[i]);
-		event.preventDefault();
+		$("#link").attr("href", link[i]);
 	}
 	
-	$("#button-holder .bttn[value='Next>']").on("click", nextimage);
-	$("#button-holder .bttn[value='<Back']").on("click", previousimage);
 
 });

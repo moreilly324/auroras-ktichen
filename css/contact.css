@@ -48,6 +48,9 @@ body {
   font-size: 26px;
   line-height: 1.4;
   color: #606161;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
   font-family: 'Open Sans', Helvetica, Arial, sans-serif;
   font-weight: 300;
   background: white	;
@@ -65,28 +68,28 @@ a {
 /* Center the container */
 .container {
   width: 100%;
+  text-align: center;
   margin: 0 auto;
   background: white;
 }
 
 #sub-form{
   text-align: center;
+  width: 100%;
+  position: fixed;
   background: #676;
-  border-bottom: 3px solid white;
-  padding-bottom: 6px;
   padding-top: 4px;
+  padding-bottom: .5%;
+  z-index: 9999;
 }
 
 form label{
   color: white;
   text-align: bottom;
-  line-height: 1;
   font-weight: 800;
   padding-right: 22px;
   margin: 0;
-  box-sizing: normal;
-  width: 60%;
-  height: 50px;
+  width: 60%;;
 }
 
 #sub-list{
@@ -111,61 +114,60 @@ form label{
   cursor: pointer;
 }
 header{
-	width: 90%;
-	margin:	0 auto;
-	text-align: center;
-	font-family: 'Handlee', cursive;
-	margin-top: 2.5%;	
+  margin: 0 auto;
+  font-family: 'Handlee', cursive;  
+  margin-right: 0;
 }
 
 header>.wrap{
-	width: auto;
-	min-width: 0;
-	max-width: none;
-	padding-left: 20%;
+  width: auto;
+  min-width: 0;
+  max-width: none;
+  padding-left: 20%;
 }
 #inside{
-	text-align: center;
+  text-align: center;
+  padding-top: 5%;
 }
 
 #first{
-	float: left;
-	width: 30%;
-	display: block;
-	margin-top: 4.5%;
+  float: left;
+  width: 30%;
+  display: block;
+  margin-top: 4.5%;
 }
 
 #logo{
-	float: left;
-	display: block;
-	text-align: center;
-	width: 15%;
+  float: left;
+  display: block;
+  text-align: center;
+  width: 15%;
 }
 
 #second{
-	float: left;
-	width: 30%;
-	display: block;
-	margin-top: 4.5%;
+  float: left;
+  width: 30%;
+  display: block;
+  margin-top: 4.5%;
 }
 
 nav ul{
-	list-style: none;
+  list-style: none;
 }
 
 nav ul li{
-	display: inline-block;
-	text-transform: uppercase;
-	font-size: .65em;
-	padding: 2% 7%;
+  display: inline-block;
+  text-transform: uppercase;
+  font-size: .65em;
+  padding: 2% 7%;
 }
 
 nav ul li:first-child{
-	padding-right: 10%;
+  padding-right: 10%;
 }
 
 nav a{
-	color: #676;
+  color: #676;
 }
 
 
@@ -198,21 +200,17 @@ ul .dropmenu:hover{
 }
 
 #slogan{
-	text-align: center;
-	color: #676;
-	font-family: 'Cormorant Garamond', serif;
-	font-style: 300i;
-	font-size: .75em;
+  text-align: center;
+  color: #676;
+  font-family: 'Cormorant Garamond', serif;
+  margin-right: -3%;
+  font-size: .75em;
 }
 
 .first-third{
 	width: 31%;
 	position: relative;
 	float: left;
-}
-
-.firsdt-third .inside-pic{
-	top: 80%;
 }
 
 .one-third{
@@ -227,7 +225,7 @@ footer{
 	color: white;
 	background: linear-gradient(0deg, rgba(2,173,231,0.5), rgba(2,173,231,0.5)), url(../images/footer.jpg) repeat;
 	background-position: 50% 70%;
-	width: 100%;
+	width: 105%;
 	text-align: center;
 	padding: 2%;
 }
@@ -274,3 +272,67 @@ footer ul li:first-child{
 .gender{
   text-decoration: underline;
 }
+
+@media screen and (max-width: 1250px) and (min-width: 1000px){
+
+.inside-pic h2{
+  font-size: 1.1em;
+}
+
+.first-quarter .inside-pic{
+  top: bottom;
+}
+.one-quarter .inside-pic{
+  top: bottom;
+}
+
+header{
+  font-size: .7em;  
+  padding-top: 3%;
+}
+
+}
+
+@media screen and (max-width: 1000px) and (min-width: 768px){
+
+#sub-form label{
+font-size: .75em;
+}
+
+#subscribe{
+  width: 10%;
+  font-size: .4em;
+}
+header{
+  font-size: .7em;  
+  padding-top: 3%;
+}
+
+
+footer{
+  height: 150px;
+  font-size: .85em;
+}
+}
+
+@media screen and (max-width: 768px){
+
+nav{
+  width: 100%;
+}
+
+
+#header nav li{
+  float: none;
+}
+
+
+
+footer{
+  height: 150px;
+  font-size: .85em;
+}
+
+}
+
+

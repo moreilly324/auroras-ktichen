@@ -47,10 +47,10 @@ body {
   color: #043049;
   font-size: 26px;
   line-height: 1.4;
+  color: #606161;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  color: #606161;
   font-family: 'Open Sans', Helvetica, Arial, sans-serif;
   font-weight: 300;
   background: white	;
@@ -230,7 +230,6 @@ ul .dropmenu:hover{
 #side {
   float: right;
   width: 35%;
-  border-left: 3px solid #676;
   display: inline-block;
   border-left: 4px solid white;
   margin-top: -3%;
@@ -240,15 +239,53 @@ ul .dropmenu:hover{
 	border: 3px black;
 }
 
-#array{
+.first-quarter{
+	width: 25%;
+	position: relative;
+	float: left;
+}
+
+
+.one-quarter{
+	position: relative;
+	float: left;
 	padding-left: 2%;
+	width: 25%;
+}
+
+.border{
+	border-bottom: 1px solid #676;
+}
+
+.food-header{
+	font-size: .85em;
+	text-align: left;
+	padding-top: 2%;
+	font-family: 'Cormorant Garamond', serif;
+}
+
+.see{
+	font-family: 'Cormorant Garamond', serif;
+	font-size: .75em;
+	text-align: right;
+}
+
+.see a{
+	color: #676;
+}
+
+.see a:hover{
+	text-decoration: underline;
+}
+
+.break{
+	border-bottom: 3px #676;
 }
 
 .image{
 	position: relative;
 	width: 100%;
 }
-
 
 .inside-pic {
 	position: absolute; 
@@ -268,7 +305,6 @@ ul .dropmenu:hover{
    padding: 10px; 
    width: 100%;
 }
-
 
 .inside-pic h2{
 	font-size: 1.5em;
@@ -302,7 +338,9 @@ ul .dropmenu:hover{
 	color: #676;
 	font-family: 'Cormorant Garamond', serif;
 	font-weight: bold;
-	font-size: 1em;
+	padding-left: 28%;
+	padding-top
+	font-size: 3em;
 	text-decoration: underline;
 	margin-top: 1%;
 }
@@ -324,20 +362,6 @@ aside button{
 	margin-left: 60%;
 }
 
-.first-third{
-	width: 31%;
-	position: relative;
-	float: left;
-}
-
-
-.one-third{
-	position: relative;
-	float: left;
-	padding-left: 2%;
-	width: 31%;
-}
-
 #quick{
 	padding-top: 3%;
 }
@@ -349,8 +373,8 @@ aside button{
 	font-family: 'Cormorant Garamond', serif;
 }
 
-#side{
-	padding-top: 3.5%;
+#sides{
+	padding-top: 3%;
 }
 
 #sides a{
@@ -368,7 +392,20 @@ aside button{
 
 #search-form{
 	padding: 3%;
-	box-shadow: 
+}
+
+.first-third{
+	width: 31%;
+	position: relative;
+	float: left;
+}
+
+
+.one-third{
+	position: relative;
+	float: left;
+	padding-left: 2%;
+	width: 31%;
 }
 
 footer{
@@ -391,6 +428,27 @@ footer ul li:first-child{
 	padding: 0;
 }
 
+@media screen and (max-width: 1250px) and (min-width: 1000px){
+
+.inside-pic h2{
+	font-size: 1.1em;
+}
+
+.first-quarter .inside-pic{
+	top: bottom;
+}
+.one-quarter .inside-pic{
+	top: bottom;
+}
+
+header{
+	font-size: .7em;	
+	padding-top: 3%;
+}
+
+
+}
+
 @media screen and (max-width: 1000px) and (min-width: 768px){
 
 #sub-form label{
@@ -402,13 +460,12 @@ font-size: .75em;
   font-size: .4em;
 }
 header{
-	font-size: .7em;
-	 padding-top: 3%;	
+	font-size: .7em;	
+	padding-top: 3%;
 }
 
 #main {
   height: 900px;
-  margin-bottom: 3%;
 }
 
 #side {
@@ -421,10 +478,10 @@ header{
 .inside-pic br{
 	display: none;
 }
-.first-third .image .holder{
+.first-quarter .image .holder{
 	height: 150px;
 }
-.one-third .image .holder{
+.one-quarter .image .holder{
 	height: 150px;
 }
 
@@ -433,13 +490,13 @@ header{
 }
 
 .inside-pic h2{
-	font-size: 1.2em;
+	font-size: .95em;
 }
 
-.first-third .inside-pic{
+.first-quarter .inside-pic{
 	top: 80%;
 }
-.one-third .inside-pic{
+.one-quarter .inside-pic{
 	top: 80%;
 }
 
@@ -483,10 +540,10 @@ nav{
 .inside-pic br{
 	display: none;
 }
-.first-third .image .holder{
+.first-quarter .image .holder{
 	height: 150px;
 }
-.one-third .image .holder{
+.one-quarter .image .holder{
 	height: 150px;
 }
 
@@ -498,10 +555,10 @@ nav{
 	font-size: 1.2em;
 }
 
-.first-third .inside-pic{
+.first-quarter .inside-pic{
 	top: 80%;
 }
-.one-third .inside-pic{
+.one-quarter .inside-pic{
 	top: 80%;
 }
 
