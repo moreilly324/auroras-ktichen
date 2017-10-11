@@ -209,9 +209,6 @@ ul .dropmenu:hover{
   display: inline-block;
 }
 
-.mobile{
-	display: none;
-}
 #slogan{
 	text-align: center;
 	color: #676;
@@ -561,7 +558,7 @@ header{
 
 
 footer{
-  height: 350px;
+  height: 400px;
 }
 
 
@@ -599,30 +596,45 @@ font-size: .65em;
 }
 header{
 	font-size: .7em;
-	 padding-top: 3%;	
+	 padding-top: 5%;	
+}
+
+
+#slogan{
+	font-size: .65em;
+	padding-top: 2%;
 }
 
 #main {
-	height: 1100px;
-  margin-bottom: 3%;
+	height: 1000px;
+  	margin-bottom: 3%;
 }
 
-
-.holder{
-	height: 350px;
+#posts{
+	float: none;
 }
-.inside-pic br{
+
+#side{
+	float: none;
+}
+
+#side article{
 	display: none;
 }
-.first-third .image .holder{
-	height: 150px;
-}
-.one-third .image .holder{
-	height: 150px;
+
+#quick{
+	display: none;
 }
 
+#sides{
+	display: none;
+}
+
+.holder{
+	display: none;
+}
 .inside-pic {
-    top: 78.7%; 
+    top: 70.7%; 
 }
 
 .inside-pic h2{
@@ -630,10 +642,10 @@ header{
 }
 
 .first-third .inside-pic{
-	top: 70%;
+	display: none;
 }
 .one-third .inside-pic{
-	top: 70%;
+	display: none;
 }
 
 #side img{
@@ -646,28 +658,31 @@ header{
 
 
 footer{
-  height: 350px;
+  height: 250px;
 }
 
+footer h2{
+	font-size: .8em;
+}
 
 footer img{
-  height: 125px;
+  height: 90px;
 }
 
 footer p{
-  font-size: .6em;
-  padding-top: .15%;
+  font-size: .5em;
+  padding-top: 0;
+}
+
+.hid{
+	display: none;
 }
 
 footer ul li a{
-  font-size: .8em;
-}
-
-footer ul li ul li a{
-  font-size: .8em;
+  font-size: .75em;
 }
 
 footer ul li ul li{
-  font-size: .8em;
+  display: none
 }
 }

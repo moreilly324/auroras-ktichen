@@ -55,6 +55,7 @@ body {
   font-weight: 300;
   background: white	;
   width: 100%;
+  overflow-x: none;
 }
 a {
   text-decoration: none;
@@ -455,19 +456,23 @@ footer ul li:first-child{
 @media screen and (max-width: 1250px) and (min-width: 1000px){
 
 .inside-pic h2{
-	font-size: 1.1em;
+  font-size: 1.1em;
 }
 
 .first-quarter .inside-pic{
-	top: bottom;
+  top: bottom;
 }
 .one-quarter .inside-pic{
-	top: bottom;
+  top: bottom;
+}
+
+#side img{
+	height: 70%;
 }
 
 header{
-	font-size: .7em;	
-	padding-top: 3%;
+  font-size: .7em;  
+  padding-top: 3%;
 }
 
 footer{
@@ -510,17 +515,15 @@ font-size: .75em;
   font-size: .4em;
 }
 header{
-	font-size: .7em;	
-	padding-top: 3%;
+	font-size: .7em;
+	 padding-top: 3%;	
 }
 
 #main {
-  height: 900px;
+	height: 1100px;
+  margin-bottom: 3%;
 }
 
-#side {
-  margin-top: -6%;
-}
 
 .holder{
 	height: 350px;
@@ -536,69 +539,7 @@ header{
 }
 
 .inside-pic {
-    top: 66.7%; 
-}
-
-.inside-pic h2{
-	font-size: .95em;
-}
-
-.first-quarter .inside-pic{
-	top: 80%;
-}
-.one-quarter .inside-pic{
-	top: 80%;
-}
-
-#side img{
-	height: 70%;
-}
-
-#search-form label{
-	font-size: .6em;
-}
-
-
-footer{
-	height: 150px;
-	font-size: .85em;
-}
-}
-
-@media screen and (max-width: 768px){
-
-nav{
-	width: 100%;
-}
-
-
-#header nav li{
-	float: none;
-}
-
-#main {
-  height: 900px;
-}
-
-#side {
-  margin-top: -6%;
-}
-
-.holder{
-	height: 350px;
-}
-.inside-pic br{
-	display: none;
-}
-.first-quarter .image .holder{
-	height: 150px;
-}
-.one-quarter .image .holder{
-	height: 150px;
-}
-
-.inside-pic {
-    top: 66.7%; 
+    top: 78.7%; 
 }
 
 .inside-pic h2{
@@ -606,10 +547,10 @@ nav{
 }
 
 .first-quarter .inside-pic{
-	top: 80%;
+	top: 70%;
 }
 .one-quarter .inside-pic{
-	top: 80%;
+	top: 70%;
 }
 
 #side img{
@@ -620,11 +561,206 @@ nav{
 	font-size: .6em;
 }
 
+
 footer{
-	height: 150px;
-	font-size: .85em;
+  height: 350px;
 }
 
+
+footer img{
+  height: 125px;
 }
+
+footer p{
+  font-size: .6em;
+  padding-top: .15%;
+}
+
+footer ul li a{
+  font-size: .8em;
+}
+
+footer ul li ul li a{
+  font-size: .8em;
+}
+
+footer ul li ul li{
+  font-size: .8em;
+}
+}
+
+
+@media screen and (max-width: 1000px) and (min-width: 768px){
+
+#sub-form label{
+font-size: .75em;
+}
+
+#subscribe{
+  width: 10%;
+  font-size: .4em;
+}
+header{
+	font-size: .7em;
+	 padding-top: 3%;	
+}
+
+#main {
+	height: 1100px;
+  margin-bottom: 3%;
+}
+
+
+.holder{
+	height: 350px;
+}
+.inside-pic br{
+	display: none;
+}
+.first-quarter .image .holder{
+	height: 150px;
+}
+.one-quarter .image .holder{
+	height: 150px;
+}
+
+.inside-pic {
+    top: 78.7%; 
+}
+
+.inside-pic h2{
+	font-size: 1.2em;
+}
+
+.first-quarter .inside-pic{
+	top: 70%;
+}
+.one-quarter .inside-pic{
+	top: 70%;
+}
+
+#side img{
+	height: 70%;
+}
+
+#search-form label{
+	font-size: .6em;
+}
+
+
+footer{
+  height: 400px;
+}
+
+
+footer img{
+  height: 125px;
+}
+
+footer p{
+  font-size: .6em;
+  padding-top: .15%;
+}
+
+footer ul li a{
+  font-size: .8em;
+}
+
+footer ul li ul li a{
+  font-size: .8em;
+}
+
+footer ul li ul li{
+  font-size: .8em;
+}
+}
+
+@media screen and (max-width: 768px){
+
+#sub-form label{
+font-size: .65em;
+}
+
+#subscribe{
+  width: 10%;
+  font-size: .3em;
+}
+header{
+	font-size: .7em;
+	 padding-top: 5%;	
+}
+
+
+#slogan{
+	font-size: .65em;
+	padding-top: 2%;
+}
+
+#main {
+	height: 1000px;
+  	margin-bottom: 3%;
+}
+
+#posts{
+	float: none;
+}
+
+#side{
+	display: none;
+}
+
+.inside-pic {
+    top: 58.7%; 
+    padding-bottom: -2%;
+ }
+
+.inside-pic h2{
+	font-size: 1.2em;
+}
+
+.first-quarter .inside-pic{
+	display: none;
+}
+.one-quarter .inside-pic{
+	display: none;
+}
+
+
+footer{
+  height: 250px;
+}
+
+footer h2{
+	font-size: .8em;
+}
+
+footer img{
+  height: 90px;
+}
+
+footer p{
+  font-size: .5em;
+  padding-top: 0;
+}
+
+footer p a{
+	color: white;
+}
+
+
+.hid{
+	display: none;
+}
+
+footer ul li a{
+  font-size: .55em;
+  color: white;
+}
+
+footer ul li ul li{
+  display: none
+}
+}
+
 
 

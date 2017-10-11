@@ -9,6 +9,12 @@ $(document).ready(function()	{
 			}
 		);
 
+	$(window).resize(function(){
+		if(window.innerwidth < 768)	{
+			$("#nav").removeClass('.hover')
+		}
+	});
+
 	$('#sub-list').click(blank);
 		function blank() {
 			$('#sub-list').val('');
