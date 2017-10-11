@@ -662,8 +662,12 @@ footer p{
   padding-top: .15%;
 }
 
+footer a{
+	color: white;
+}
+
 footer ul li a{
-  font-size: .8em;
+  font-size: .65em;
 }
 
 footer ul li ul li a{
@@ -709,15 +713,6 @@ header{
 	display: none;
 }
 
-.inside-pic {
-    top: 58.7%; 
-    padding-bottom: -2%;
- }
-
-.inside-pic h2{
-	font-size: 1.2em;
-}
-
 .first-quarter .inside-pic{
 	display: none;
 }
@@ -740,7 +735,6 @@ footer img{
 
 footer p{
   font-size: .5em;
-  padding-top: 0;
 }
 
 footer p a{
@@ -758,7 +752,7 @@ footer ul li a{
 }
 
 footer ul li ul li{
-  display: none
+  display: none;
 }
 }
 
