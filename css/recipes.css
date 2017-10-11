@@ -86,10 +86,15 @@ a {
 form label{
   color: white;
   text-align: bottom;
-  font-weight: 800;
+  font-family: 'Cormorant Garamond', serif;
   padding-right: 22px;
   margin: 0;
   width: 60%;;
+}
+
+form label em{
+	font-weight: 800; 
+	font-family: 'Open Sans', serif;
 }
 
 #sub-list{
@@ -289,7 +294,7 @@ ul .dropmenu:hover{
 
 .inside-pic {
 	position: absolute; 
-    top: 73%; 
+    top: 67%; 
     left: 0; 
     font-size: .5em;
     color: white;
@@ -314,15 +319,14 @@ ul .dropmenu:hover{
 }
 
 .inside-pic p{
-	font-size: .85em;
 	color: white;
 	font-style: italic;
 	padding-top: 1%;
-	padding-bottom: 1%;
 }
 
 .inside-pic a{
 	color: white;
+	font-size: .8em;
 	font-style: italic;
 	text-decoration: underline;
 }
@@ -409,7 +413,7 @@ aside button{
 }
 
 footer{
-	height: 200px;
+	height: 500px;
 	color: white;
 	background: linear-gradient(0deg, rgba(2,173,231,0.5), rgba(2,173,231,0.5)), url(../images/footer.jpg) repeat;
 	background-position: 50% 70%;
@@ -420,13 +424,33 @@ footer{
 
 footer ul{
 	list-style: none;
+	padding-top: 15%;
 }
+
+footer h2{
+	text-decoration: underline;
+}
+
+footer img{
+	padding-top: 2%;
+}
+
+footer p{
+	font-size: .8em;
+	padding-top: 2%;
+}
+
 footer ul li{
-	padding: 1%;
+	padding: 2%;
 }
 footer ul li:first-child{
 	padding: 0;
 }
+
+.footimage{
+	border-radius: 50%;
+}
+
 
 @media screen and (max-width: 1250px) and (min-width: 1000px){
 
@@ -444,6 +468,32 @@ footer ul li:first-child{
 header{
 	font-size: .7em;	
 	padding-top: 3%;
+}
+
+footer{
+  height: 350px;
+}
+
+
+footer img{
+  height: 125px;
+}
+
+footer p{
+  font-size: .65em;
+  padding-top: .15%;
+}
+
+footer ul li a{
+  font-size: .85em;
+}
+
+footer ul li ul li a{
+  font-size: .85em;
+}
+
+footer ul li ul li{
+  font-size: .85em;
 }
 
 

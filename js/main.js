@@ -22,19 +22,7 @@ $(document).ready(function()	{
 				$('#sub-list').val('Your e-mail address');
 		}
 
-	$('#search').click(clear);
-			function clear() {
-				$('#search').val('');
-		}
-
-		$('#search').focusout(fill);
-
-	    function fill() {
-	    	var search = $('#search').val();
-	    	if (search == "")
-				$('#search').val('Search...');
-		}
-
+	
 	$('#subscribe').click(emaillist);
 
 		function emaillist(event){
@@ -48,25 +36,25 @@ $(document).ready(function()	{
 	var images=[
 	"images/Chicken-Marsala.jpg",
 	"images/alfredo.jpg",
-	"images/scampi.jpg"
+	"images/pesto.jpg"
 	];
 
 	var title=[
 	"Chicken Marsala",
 	"Fettucini Alfredo w/ Sausage",
-	"Shrimp Scampi"
+	"Chicken Pesto Pasta"
 	];
 
 	var description=[
 	"Aurora's Chicken Marsala is easy to enjoy and even easier to prepare. Follow these simple steps to cook a delicious meal",
 	"Try Aurora's delicious Fettucini Alfredo with a twist; chunks of sausage and peas.",
-	"Everyone loves a good Shrimp Scampi. Everyone doesn't have a simple recipe they can follow. Try this out today!"
+	"Chicken Pesto and Pasta with a nutty twist. See why this unique and flavorful recipe isn't as complicated to make as you may think"
 	];
 
 	var link=[
 	'chickenmarsala.html',
 	'alfredo.html',
-	'scampi.html'
+	'chickenpesto.html'
 	];
 
 	var i=0;

@@ -18,44 +18,11 @@
 		 <script src="js/contact.js"></script>
 	</head>
 	<body>
-		<form id="sub-form">
-			<label for="sub-list" for="subscribe">Need ideas for dinner? Subscribe today! </label>
-			<input id="sub-list" type="email" name="sub-list" value="Your e-mail address" />
-			<input id="subscribe" type="submit" name="subscribe" value="SUBSCRIBE" />
-		</form>
-		<div class="container">
-			<header class="header">
-				<div id="inside" class="wrap clearfix">
-					<nav id="first">
-						<ul>
-							<li><a href="about.html">About</a></li>
-							<li><a href="contact.html">Contact</a></li>
-						</ul>
-					</nav>
-					<p id="logo"><a href="index.html"><img src="images/Aurora'sKitchen.jpg" height="90%" width="95%"></a></p>
-					<nav id="second">
-						<ul>
-							<li class="hover"><a href="recipes.html">Recipes</a>
-								<ul class="dropmenu">
-									<li><a href="chicken.html">Chicken</a></li>
-									<li><a href="beef.html">Beef</a></li>
-									<li><a href="pork.html">Pork</a></li>
-									<li><a href="sides.html">Sides</a></li>
-									<li><a href="pasta.html">Pasta/Sauces</a></li>
-									<li><a href="fish.html">Fish</a></li>
-									<li><a href="soups.html">Soups</a></li>
-									<li><a href="specials.htmk">Specials</a></li>
-								</ul>
-							</li>
-							<li><a href="blog.html">Blog</a></li>
-						</ul>
-					</nav>
-				</div>
-			</header>
-			<h2 id="slogan">Learn how to cook delectable, wholesome, and authentic recipes in a straightforward and simple fashion</h2>
-			<p></p>
-		</div>
-		<p id="border">________________________________________________________________________________________________________________________________________</p>
+		<header>
+			<a href="index.html"><img id="home" src="images/Home.jpg" alt="Homepage" height="40"></a>
+		</header>
+
+		<img src="images/contact.jpg" height="350" width="100%" id="contactimg" />
 
 		<div id="form-container">
       	<form id="settings-form">
@@ -77,61 +44,48 @@
 
           <br>
 
-          <label for="password">Password</label>
-          <input id="password" type="password" name="password">
+           <label for="company">Company</label>
+          <input id="company" type="text" name="company">
 
           <br>
 
-          <label for="dob">Date of Birth</label>
-          <input id="dob" type="date" name="dob">
-
-          <br>
-
-          <label for="phone">Phone Number</label>
-          <input id="phone" type="tel" name="phone">
-
-          <br>
-
-          <label class="gender" for="gender">Gender: </label>
-          <br>
-          <ul>
-	         <li><label for="female">Female</label>
-	         <input id="female" type="radio" name="gender" value="female"></li>
-	         <li><label for="male">Male</label>
-	         <input id="male" type="radio" name="gender" value="male"></li>
-	         <li><label for="other">Other</label>
-	         <input id="other" type="radio" name="gender" value="other"></li>
-	         <li><label for="pnti">Prefer not to identify</label>
-	         <input id="pnti" type="radio" name="gender" value="pnti"></li>
-	      </ul>
-
-          <br>
-
-          <label for="reason">Reason for Contacting</label>
+          <label for="reason">Inquiry</label>
           <input id="reason" type="text" name="reason">
 
         </fieldset>
+ 		<p id="space"></p>
 
-        <input type="submit" value="Save Settings">
+        <input type="submit" value="Send Message" class="form-btn">
       	</form>
     	</div>
-    	<footer>
+   		<footer>
 			<div class="first-third">
-				<h1>Matthew O'Reilly</h1>
-				<img src="">
-				<p></p>
+				<h2>Matthew O'Reilly</h2>
+				<img class="footimage" height="175" src="images/Matt.jpg" alt="Matthew O'Reilly">
+				<p>Matthew O'Reilly is the founder of the site, behind the design, blog articles, and digital marketing initiatives.</p>
+				<br>
+				<p>Want to find out more? He can be reached at <a href="mailto:mattoreilly24@gmail.com">mattoreilly24@gmail.com</a></p>
 			</div>
 			<div class="one-third">
 				<ul>
-					<li>Aurora's Kitchen</li>
-					<li>Contact Us</li>
-					<li>About Us</li>
+					<li><a href="index.html">Straightforward Recipes</a></li>
+					<li><a href="contact.html">Contact Us</a></li>
+					<li>Do Business With Us:
+						<ul>
+							<li><a href="contact.html">Fill out our Contact Form</a></li>
+							<li><a href="mailto:straightforwardrecipes@gmail.com">Or email us here</a></li>
+						</ul>
+					</li>
+					<li><a href="subscribe.html">Subscribe to the Free Newsletter</a></li>
+					<li><a href="aboutstraightforwardrecipes.html">About Us</a></li>
 				</ul>
 			</div>
 			<div class="one-third">
-				<h1>Aurora O'Reilly</h1>
-				<img src="">
-				<p></p>
+				<h2>Aurora O'Reilly</h2>
+				<img class="footimage" height="175" src="images/Aurora.jpg" alt="Aurora O'Reilly">
+				<p>Aurora O'Reilly is the brains behind the recipes themselves.</p>
+				<br>
+				<p>Want to find out more? She can be reached at <a href="mailto:mattoreilly24@gmail.com">aurora.oreilly@gmail.com</p>
 			</div>
 		</footer>
 	</body>

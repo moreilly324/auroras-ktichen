@@ -55,6 +55,7 @@ body {
   font-weight: 300;
   background: white	;
   width: 100%;
+  overflow-x: hidden;
 }
 a {
   text-decoration: none;
@@ -86,10 +87,17 @@ a {
 form label{
   color: white;
   text-align: bottom;
-  font-weight: 800;
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
   padding-right: 22px;
   margin: 0;
   width: 60%;;
+}
+
+form label em{
+	font-weight: 800; 
+	font-style: normal;
+	font-family: 'Open Sans', serif;
 }
 
 #sub-list{
@@ -132,9 +140,10 @@ header>.wrap{
 
 #first{
 	float: left;
+	font-family: 'Handlee', cursive;
 	width: 30%;
 	display: block;
-	margin-top: 4.5%;
+	margin-top: 5.5%;
 }
 
 #logo{
@@ -146,9 +155,10 @@ header>.wrap{
 
 #second{
 	float: left;
+	font-family: 'Handlee', cursive;
 	width: 30%;
 	display: block;
-	margin-top: 4.5%;
+	margin-top: 5.5%;
 }
 
 nav ul{
@@ -199,10 +209,14 @@ ul .dropmenu:hover{
   display: inline-block;
 }
 
+.mobile{
+	display: none;
+}
 #slogan{
 	text-align: center;
 	color: #676;
 	font-family: 'Cormorant Garamond', serif;
+	font-style: italic;
 	margin-right: -3%;
 	font-size: .75em;
 }
@@ -273,6 +287,7 @@ ul .dropmenu:hover{
 .inside-pic h2{
 	font-size: 1.5em;
 	font-family: 'Cormorant Garamond', serif;
+	font-style: italic;
 	text-decoration: underline;
 	font-weight: 300i 
 }
@@ -301,6 +316,7 @@ ul .dropmenu:hover{
 #dishes{
 	color: #676;
 	font-family: 'Cormorant Garamond', serif;
+	font-style: italic;
 	font-weight: bold;
 	font-size: 1em;
 	text-decoration: underline;
@@ -310,6 +326,7 @@ ul .dropmenu:hover{
 aside a{
 	color: #676;
 	font-family: 'Cormorant Garamond', serif;
+	font-style: italic;
 	font-weight: bold;
 	text-decoration: underline;
 }
@@ -347,6 +364,7 @@ aside button{
 	padding-right: 5%;
 	text-decoration: underline;
 	font-family: 'Cormorant Garamond', serif;
+	font-style: italic;
 }
 
 #side{
@@ -358,6 +376,7 @@ aside button{
 	padding-right: 5%;
 	text-decoration: underline;
 	font-family: 'Cormorant Garamond', serif;
+	font-style: italic;
 }
 
 #search-form label{
@@ -372,23 +391,115 @@ aside button{
 }
 
 footer{
-	height: 200px;
+	height: 400px;
 	color: white;
 	background: linear-gradient(0deg, rgba(2,173,231,0.5), rgba(2,173,231,0.5)), url(../images/footer.jpg) repeat;
 	background-position: 50% 70%;
-	width: 105%;
+	width: 100%;
 	text-align: center;
 	padding: 2%;
+	padding-left: 5%;
 }
 
 footer ul{
 	list-style: none;
+	padding-top: 15%;
+	font-style: italic;
+	font-size: .85em;
 }
+
+footer h2{
+	text-decoration: underline;
+}
+
+footer a{
+	color: white;
+}
+
+footer img{
+	padding-top: 2%;
+}
+
+footer p{
+	font-size: .65em;
+	padding-top: .15%;
+}
+
 footer ul li{
-	padding: 1%;
+	padding: 2%;
 }
+
+footer ul li ul li a{
+	font-size: 1.1em;
+}
+
+footer ul li ul li{
+	font-size: 1.1em;
+}
+
 footer ul li:first-child{
 	padding: 0;
+}
+
+footer ul li ul{
+	padding-top: 1%;
+	padding-left: 12%;
+	padding-bottom: 0;
+}
+
+.footimage{
+	border-radius: 50%;
+}
+
+@media screen and (max-width: 1250px) and (min-width: 1000px){
+
+.inside-pic h2{
+  font-size: 1.1em;
+}
+
+.first-quarter .inside-pic{
+  top: bottom;
+}
+.one-quarter .inside-pic{
+  top: bottom;
+}
+
+#side img{
+	height: 70%;
+}
+
+header{
+  font-size: .7em;  
+  padding-top: 3%;
+}
+
+footer{
+  height: 350px;
+}
+
+
+footer img{
+  height: 125px;
+}
+
+footer p{
+  font-size: .65em;
+  padding-top: .15%;
+}
+
+footer ul li a{
+  font-size: .85em;
+}
+
+footer ul li ul li a{
+  font-size: .85em;
+}
+
+footer ul li ul li{
+  font-size: .85em;
+}
+
+
 }
 
 @media screen and (max-width: 1000px) and (min-width: 768px){
@@ -407,13 +518,10 @@ header{
 }
 
 #main {
-  height: 900px;
+	height: 1100px;
   margin-bottom: 3%;
 }
 
-#side {
-  margin-top: -6%;
-}
 
 .holder{
 	height: 350px;
@@ -429,7 +537,7 @@ header{
 }
 
 .inside-pic {
-    top: 66.7%; 
+    top: 78.7%; 
 }
 
 .inside-pic h2{
@@ -437,10 +545,10 @@ header{
 }
 
 .first-third .inside-pic{
-	top: 80%;
+	top: 70%;
 }
 .one-third .inside-pic{
-	top: 80%;
+	top: 70%;
 }
 
 #side img{
@@ -453,29 +561,52 @@ header{
 
 
 footer{
-	height: 150px;
-	font-size: .85em;
+  height: 350px;
+}
+
+
+footer img{
+  height: 125px;
+}
+
+footer p{
+  font-size: .6em;
+  padding-top: .15%;
+}
+
+footer ul li a{
+  font-size: .8em;
+}
+
+footer ul li ul li a{
+  font-size: .8em;
+}
+
+footer ul li ul li{
+  font-size: .8em;
 }
 }
 
 @media screen and (max-width: 768px){
 
-nav{
-	width: 100%;
+#sub-form label{
+font-size: .65em;
 }
 
-
-#header nav li{
-	float: none;
+#subscribe{
+  width: 10%;
+  font-size: .3em;
+}
+header{
+	font-size: .7em;
+	 padding-top: 3%;	
 }
 
 #main {
-  height: 900px;
+	height: 1100px;
+  margin-bottom: 3%;
 }
 
-#side {
-  margin-top: -6%;
-}
 
 .holder{
 	height: 350px;
@@ -491,7 +622,7 @@ nav{
 }
 
 .inside-pic {
-    top: 66.7%; 
+    top: 78.7%; 
 }
 
 .inside-pic h2{
@@ -499,10 +630,10 @@ nav{
 }
 
 .first-third .inside-pic{
-	top: 80%;
+	top: 70%;
 }
 .one-third .inside-pic{
-	top: 80%;
+	top: 70%;
 }
 
 #side img{
@@ -513,11 +644,30 @@ nav{
 	font-size: .6em;
 }
 
+
 footer{
-	height: 150px;
-	font-size: .85em;
-}
-
+  height: 350px;
 }
 
 
+footer img{
+  height: 125px;
+}
+
+footer p{
+  font-size: .6em;
+  padding-top: .15%;
+}
+
+footer ul li a{
+  font-size: .8em;
+}
+
+footer ul li ul li a{
+  font-size: .8em;
+}
+
+footer ul li ul li{
+  font-size: .8em;
+}
+}
